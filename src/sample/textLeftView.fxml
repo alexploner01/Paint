@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="150.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TextLeftViewController">
+   <children>
+      <ImageView fx:id="textTool" fitHeight="50.0" fitWidth="50.0" layoutX="50.0" layoutY="14.0" onMouseClicked="#texAreaButtonPressed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/textField.png" />
+         </image>
+      </ImageView>
+      <HBox fx:id="hbox" layoutY="200.0" prefHeight="41.0" prefWidth="150.0" spacing="10.0">
+         <children>
+            <Label prefHeight="36.0" prefWidth="161.0" text="Deckkraft">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="opacityTextFiled" alignment="CENTER" onAction="#changeOpacityFromTextField" prefHeight="31.0" prefWidth="120.0" text="100">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <Slider fx:id="opacitySlider" layoutY="247.0" onMouseClicked="#changeOpacityFromSlider" onMouseDragged="#changeOpacityFromSlider" value="100.0" />
+      <ColorPicker fx:id="colorPicker" layoutX="1.0" layoutY="361.0" onAction="#colorPicked" prefHeight="31.0" prefWidth="150.0" />
+      <TextArea fx:id="textArea" layoutX="10.0" layoutY="93.0" onKeyTyped="#writeInTextAreaDetected" prefHeight="93.0" prefWidth="131.0" promptText="Text ......" />
+      <Slider fx:id="fontSlider" layoutY="334.0" onMouseClicked="#changeFontFromSlider" onMouseDragged="#changeFontFromSlider" value="12.0" />
+      <HBox fx:id="hbox1" layoutX="1.0" layoutY="287.0" prefHeight="41.0" prefWidth="150.0" spacing="10.0">
+         <children>
+            <Label prefHeight="36.0" prefWidth="161.0" text="Größe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fontTextField" alignment="CENTER" onAction="#changeFontFromTextField" prefHeight="31.0" prefWidth="120.0" text="12">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+   </children>
+</Pane>

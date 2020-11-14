@@ -1,0 +1,11 @@
+#pane {
+    -fx-background-color: lightgray;
+}
+
+#pencilsGridPane {
+    -fx-background-color: lightgreen;
+}
+
+#toolsGridShapesLeft {
+    -fx-background-color: lightgreen;
+}

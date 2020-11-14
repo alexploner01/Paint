@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Paint1.2:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Paint1_2_jar</output-path>
+    <root id="archive" name="Paint.jar">
+      <element id="module-output" name="Paint" />
+      <element id="extracted-dir" path="C:/Gradle/jfoenix-9.0.8.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
